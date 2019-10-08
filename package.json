@@ -1,33 +1,45 @@
 {
-  "name": "pet-connect",
+  "name": "project2",
   "version": "1.0.0",
-  "description": "# Link https://awesomeproject2.herokuapp.com/",
+  "description": "Project 2 Starter",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint --quiet .",
+    "fix": "eslint --fix .",
+    "test": "npm run lint && cross-env NODE_ENV=test mocha -u tdd --reporter spec --exit"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.15.1",
+    "vanilla-tilt": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mocha": "^6.1.4",
+    "prettier": "^1.17.1"
+  },
   "directories": {
     "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DavidEMartin37/Project-2.git"
   },
   "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/DavidEMartin37/Project-2/issues"
   },
-  "homepage": "https://github.com/DavidEMartin37/Project-2#readme",
-  "dependencies": {
-    "@types/node": "^12.7.11",
-    "axios": "^0.19.0",
-    "chai": "^4.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "mysql": "^2.17.1",
-    "sequelize": "^5.19.4",
-    "vanilla-tilt": "^1.7.0"
-  }
+  "homepage": "https://github.com/DavidEMartin37/Project-2#readme"
 }
